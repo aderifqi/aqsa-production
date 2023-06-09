@@ -336,6 +336,7 @@ header {
 /********************* TESTIMONI *********************/
 
 .testimonials__container {
+    position: relative;
     overflow-x: hidden;
     margin-bottom: 5rem;
     align-items: center;
@@ -548,5 +549,9 @@ footer ul li a:hover {
     .catalogs__container {
         grid-template-columns: 1fr;
     }
+
+    /********************* Testimoni *********************/
+
+
 
 }

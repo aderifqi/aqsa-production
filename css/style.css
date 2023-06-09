@@ -408,7 +408,7 @@ footer ul li a:hover {
 }
 
 
-/********************* Meida Queary *********************/
+/********************* Media Queary *********************/
 
 @media screen and (max-width: 1024px) {
     /* body {
@@ -445,12 +445,12 @@ footer ul li a:hover {
         cursor: pointer;
     }
 
-    nav button#close-menu-btn{
+    nav button#close-menu-btn {
         display: none;
     }
 
 
-    .nav__menu{
+    .nav__menu {
         position: fixed;
         top: 5rem;
         right: 5%;
@@ -467,16 +467,18 @@ footer ul li a:hover {
         animation: animateNavItems 1s linear forwards;
         transform-origin: top right;
     }
-    
+
     @keyframes animateNavItems {
-        0%{
+        0% {
             transform: rotateZ(-90deg);
         }
-        100%{
+
+        100% {
             transform: rotateZ(0);
         }
-        
+
     }
+
     .nav__menu li a {
         background: var(--color-primary);
         box-shadow: -4rem 6rem 10 rem rgba(0, 0, 0, 0.6);
@@ -487,8 +489,17 @@ footer ul li a:hover {
     }
 
     .nav__menu li a:hover {
-        background:  var(--color-bg2);
+        background: var(--color-bg2);
         color: var(--color-white);
     }
-    
+
+    /********************* Navbar *********************/
+    .catalogs__container {
+        grid-template-columns: 1fr;
+    }
+
+    /********************* Footer *********************/
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
 }

@@ -289,6 +289,51 @@ header {
 
 
 
+
+/********************* Catalog *********************/
+.benefits {
+    background: var(--color-bg1);
+}
+
+.benefit__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.benefit {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.benefit:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.benefit__icon {
+    background: var(--color-primary);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.benefit h5 {
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+}
+
+.benefit p {
+    font-size: 1rem;
+}
+
+.benefit .benefit__icon i {
+    font-size: 1.2rem;
+}
+
+
+
 /********************* FAQS *********************/
 
 .faqs {
@@ -510,6 +555,13 @@ footer ul li a:hover {
         grid-template-columns: 2fr;
     }
 
+    /********************* Benefit *********************/
+    .benefit__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
     /********************* FAQS *********************/
     .faq {
         padding: 1rem;
@@ -545,6 +597,11 @@ footer ul li a:hover {
 
 
     /********************* Catalog *********************/
+
+    .catalogs {
+        margin-top: 0;
+        padding-top: 0;
+    }
 
     .catalogs__container {
         grid-template-columns: 1fr;

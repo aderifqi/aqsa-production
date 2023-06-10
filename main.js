@@ -45,3 +45,15 @@ closeBtn.addEventListener("click", () => {
     closeBtn.style.display = "none"
     menuBtn.style.display = 'inline-block'
 })
+
+
+// smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
